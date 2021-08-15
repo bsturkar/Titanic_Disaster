@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/prediction11.css?q=1280549780">
+</head>
+
+<body>
+    <div style="background-image: url('/static/titanic_sinking.png');">
+
+    <h1>Prediction : {{ result[0] }}</h1>
+    <div class = "first">
+        Name          :   {{ result[1] }}
+        <br> 
+        sex           :   {{ result[2] }}
+        <br>
+        age           :   {{ result[3] }}
+        <br>
+        Family        :   {{ result[4] }}
+        <br>
+        No of Parents :   {{ result[5] }}
+    </div>
+    
+    
+<br><br><br><br>
+
+    <div class = "second">
+        Class : {{ result[6] }}
+        <br>
+        Ticket : {{ result[7] }}
+        <br>
+        Fare : {{ result[8] }}
+        <br>
+        Deck : {{ result[9] }}
+        <br>
+        Embarked : {{ result[10] }}
+
+    </div>
+
+<br><br><br><br>
+    <div class = "predict">
+        
+        To predict anather details
+        <br>
+        <input type="button" class="button1" value="back" onclick="history.back()">
+        
+    </div>
+
+    <!--<img src= "/static/Titanic_boat.jpeg" alt="error">--> 
+    <!-- {{ url_for('static', filename='Titanic_boat.jpeg') }} -->
+    </div>
+    
+</body>
+
+</html>

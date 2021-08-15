@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<!-- Head --> 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic</title>
+    <!--<link rel="stylesheet" href="/static/style.css?q=1280549790">-->
+    <link rel="stylesheet" href="/static/style4.css">
+    <!-- /static/hompage.css -->
+</head> 
+
+<!-- Body -->
+<body>
+
+<div style="background-image: url('/static/titanic_sinking.png');">
+
+    
+    <!-- Heading -->
+    <h1>
+        Titanic disaster ML by <strong><i>BHASKAR TURKAR</i></strong>
+    </h1>
+
+    <!-- Menu -->
+    <ul>
+        <li>
+        <!--yarget bank will open a new tab if not given this command it will load in same tab-->
+           <a href="https://github.com/bsturkar/Titanic_Disaster" target="_blank">Github Source Code </a>
+        </li>
+        <li>
+            <a href="analysis" method = "['GET','POST']">Analysis</a>    
+        </li>
+
+    </ul>
+
+    <!-- Form -->
+     <form action="/values" class="form", method="post">
+         
+         <div class="ticket">
+            <div>
+                <h2>Passenger Information</h2>
+                <hr>
+            </div>
+            <div class="ticket_name">
+                
+            
+            
+                Name 
+                <input type="text" name="name" placeholder="Enter passenger name">
+                <br><br>
+                Sex <font color=red>*</font>
+                <input type="radio" name="sex" id="sex" value="male" checked>Male<input type="radio" name="sex" value="female"> Female<input type="radio" name="sex" value="others">Others
+             
+                <br><br>
+                Age <font color=red>*</font> 
+                <input type="number" name="age" id="age" placeholder="Enter passenger age">
+                
+                <br><br>
+                No of Siblings <font color=red>*</font> 
+                <input type="number" name="family_size" id="family_size" placeholder = "Enter family size">
+
+                <br><br>
+                No of Parents <font color=red>*</font> 
+                <input type="number" name="parent_size" id="parent_size" placeholder="Number of parents">
+                
+            
+                
+        </div> 
+        </div>
+
+        <!-- Image Loaded -->
+        <!-- <img src= "/static/Titanic_sink.png" alt="error">-->
+<!--        -->
+        <!-- Ticket Form -->
+        <div class="ticket1">
+            <div>
+                <h2>Ticket Information</h2>
+                <hr>
+            </div>
+            <div class="ticket_name">
+                
+                
+                Class <select name="pclass" id="pclass" aria-placeholder="pclass">
+                    <option value="1">Upper</option>
+                    <option value="2">Middle</option>
+                    <option value="3">Lower</option>
+                </select>
+                <br><br>
+                
+                Ticket 
+                                <input type="text" name="ticket" id="ticket" placeholder="Enter ticket.no">
+
+                <br><br>
+                Fare <font color=red>*</font> 
+                                <input type="number" name = "fare" id="fare" placeholder="Enter total fare">
+
+                <br><br>
+                Deck 
+                <select name="cabin" id="cabin">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="T">T</option>
+                </select>
+                <br><br>
+                Embarked 
+                
+                <select name="embarked" id="embarked">
+                    <option value="C">C</option>
+                    <option value="Q">Q</option>
+                    <option value="S">S</option>
+                </select>
+
+            </div>
+        </div>
+        <br>
+        <div class = "predict">
+            <font color=red>*</font> inputs are necessary
+            <br>
+            <button value="submit"> Predict </button>
+            
+           
+        </div>
+    </form>  
+    
+     <form action="/reset" class="form", method="post">
+            
+            <div class = "predict">
+             <font color=red>*</font>Reset the values
+            <br>
+            <button value="reset"> Reset </button>
+            </form> 
+    
+</body>
+</html>
+

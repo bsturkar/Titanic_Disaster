@@ -1,0 +1,4 @@
+,code/number,No.of passanger,Survived,Dead,Survived/Dead,Survival percentage,Dead percentage
+0,age_below_26,301,124,177,70.06,41.2,58.8
+1,age_below_61,391,161,230,70.0,41.18,58.82
+2,age_below_81,22,5,17,29.41,22.73,77.27
